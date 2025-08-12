@@ -13,28 +13,7 @@ export const metadata: Metadata = {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
-  },
-  openGraph: {
-    title: "BKTI Games - Coding Sprint & Hack Password",
-    description:
-      "Play exciting coding puzzle games including Coding Sprint and Hack Password. Test your programming logic with HTML, JavaScript, TypeScript challenges and cryptography puzzles.",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "BKTI Games Logo",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "BKTI Games - Coding Sprint & Hack Password",
-    description:
-      "Play exciting coding puzzle games including Coding Sprint and Hack Password. Test your programming logic with HTML, JavaScript, TypeScript challenges and cryptography puzzles.",
-    images: ["/logo.png"],
-  },
+  }
 };
 
 export default function RootLayout({
