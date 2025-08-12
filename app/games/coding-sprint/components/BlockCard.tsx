@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useKeyboardEvent } from 'react';
+import React, { useState, useRef } from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { GripVertical } from 'lucide-react';
