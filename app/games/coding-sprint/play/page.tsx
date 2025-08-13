@@ -35,7 +35,7 @@ import { PreviewPanel } from '../components/PreviewPanel';
 import { Hud } from '../components/Hud';
 
 function GamePlay() {
-  const { state, startGame, endGame, pauseGame, resumeGame, startPuzzle, solvePuzzle, failPuzzle, useHint, resetGame } = useGame();
+  const { state, startGame, endGame, pauseGame, resumeGame, startPuzzle, solvePuzzle, failPuzzle, useHint: triggerHint, resetGame } = useGame();
   const router = useRouter();
   
   const [currentPuzzleIndex, setCurrentPuzzleIndex] = useState(0);
@@ -140,11 +140,11 @@ function GamePlay() {
 
   const handleHint = useCallback(() => {
     if (!showHint && !hintsUsedThisPuzzle) {
-      useHint();
+      triggerHint();
       setHintsUsedThisPuzzle(true);
     }
     setShowHint(!showHint);
-  }, [showHint, hintsUsedThisPuzzle, useHint]);
+  }, [showHint, hintsUsedThisPuzzle, triggerHint]);
 
   const handlePause = useCallback(() => {
     if (isPaused) {
